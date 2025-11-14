@@ -1,0 +1,43 @@
+[project]
+name = "sensor-analyzer"
+version = "0.1.1"
+description = "CLI tool to analyze temperature and humidity sensor data"
+authors = [
+    { name = "Hasna Boubakry", email = "mejustme9275@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10,<3.13"
+keywords = [
+    "cli",
+    "sensors",
+    "data-analysis",
+    "poetry",
+    "temperature",
+    "humidity"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Environment :: Console"
+]
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "click (>=8.3.0,<9.0.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/Hasna878/sensor-analyzer"
+Repository = "https://github.com/Hasna878/sensor-analyzer"
+
+[project.scripts]
+sensor-analyzer = "sensor_analyzer.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
